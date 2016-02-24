@@ -6,10 +6,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Threading.Tasks;
-using System.Windows.Media.Imaging;
 using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
-
 
 namespace NuGet.PackageManagement.UI
 {
@@ -52,8 +50,8 @@ namespace NuGet.PackageManagement.UI
                     _installedVersion = value;
                     OnPropertyChanged(nameof(InstalledVersion));
                 }
-            }        
-        }
+            }
+        }        
 
         // The version that can be installed or updated to. It is null
         // if the installed version is already the latest.
